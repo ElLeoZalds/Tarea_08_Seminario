@@ -6,19 +6,18 @@
     android:layout_height="match_parent"
     android:background="#dfe6e9">
 
-    <EditText
-        android:id="@+id/edtNum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:background="#FFF"
-        android:hint="Número 2"
-        android:inputType="numberDecimal"
-        android:padding="14dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="287dp"
+        android:layout_height="69dp"
+        android:text="Aqui podrá realizar la operación de Suma"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/edtNum1"
@@ -34,18 +33,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.176" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="287dp"
-        android:layout_height="69dp"
-        android:text="Aqui podrá realizar la operación de Suma"
-        android:textSize="25dp"
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:background="#FFF"
+        android:hint="Número 2"
+        android:inputType="numberDecimal"
+        android:padding="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.176" />
 
     <Button
         android:id="@+id/btnRespuesta"
@@ -70,6 +70,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
