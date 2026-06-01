@@ -13,19 +13,19 @@ import androidx.fragment.app.Fragment;
 
 import com.example.tarea_08.R;
 
-public class Ejercicio02Fragment extends Fragment {
+public class Ejercicio03Fragment extends Fragment {
 
-    private EditText edt1, edt2;
+    private EditText edtBase, edtAltura;
     private TextView txtResultado;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Asociar el fragment con el XML
-        View v = inflater.inflate(R.layout.activity_ejercicio02, container, false);
+        View v = inflater.inflate(R.layout.activity_ejercicio03, container, false);
 
-        edt1 = v.findViewById(R.id.edtNum1);
-        edt2 = v.findViewById(R.id.edtNum2);
+        edtBase = v.findViewById(R.id.edtBase);
+        edtAltura = v.findViewById(R.id.edtAltura);
         txtResultado = v.findViewById(R.id.txtResultado);
 
         v.findViewById(R.id.btnCalcular).setOnClickListener(view -> calcular());
@@ -34,10 +34,10 @@ public class Ejercicio02Fragment extends Fragment {
     }
     private void calcular() {
         try {
-            double suma = Double.parseDouble(edt1.getText().toString()) *
-                    Double.parseDouble(edt2.getText().toString());
+            double area = Double.parseDouble(edtBase.getText().toString()) *
+                    Double.parseDouble(edtAltura.getText().toString()) / 2;
 
-            txtResultado.setText("La respuesta es: " + suma);
+            txtResultado.setText("La respuesta es: " + area);
         } catch (NumberFormatException e) {
             txtResultado.setText("Error: Ingrese números");
         }

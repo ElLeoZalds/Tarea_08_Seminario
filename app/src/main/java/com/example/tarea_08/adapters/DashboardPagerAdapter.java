@@ -8,7 +8,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.example.tarea_08.fragments.ConfiguracionFragment;
 import com.example.tarea_08.fragments.Ejercicio01Fragment;
 import com.example.tarea_08.fragments.Ejercicio02Fragment;
-import com.example.tarea_08.fragments.Ejercicio03Fregment;
+import com.example.tarea_08.fragments.Ejercicio03Fragment;
+import com.example.tarea_08.fragments.Ejercicio04Fragment;
 
 public class DashboardPagerAdapter extends FragmentStateAdapter {
 
@@ -23,7 +24,8 @@ public class DashboardPagerAdapter extends FragmentStateAdapter {
         switch (position) {
             case 0: return new Ejercicio01Fragment();
             case 1: return new Ejercicio02Fragment();
-            case 2: return new Ejercicio03Fregment();
+            case 2: return new Ejercicio03Fragment();
+            case 3: return new Ejercicio04Fragment();
             default: return new ConfiguracionFragment();
         }
 

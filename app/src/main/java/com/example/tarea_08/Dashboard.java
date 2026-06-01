@@ -36,10 +36,11 @@ public class Dashboard extends AppCompatActivity {
                     @Override
                     public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                         switch (position) {
-                            case 0: tab.setText("Tarea 01"); break;
-                            case 1: tab.setText("Tarea 02"); break;
-                            case 2: tab.setText("Tarea 03"); break;
-                            case 3: tab.setText("Configuración"); break;
+                            case 0: tab.setText("Ejercicio 01"); break;
+                            case 1: tab.setText("Ejercicio 02"); break;
+                            case 2: tab.setText("Ejercicio 03"); break;
+                            case 3: tab.setText("Ejercicio 04"); break;
+                            case 4: tab.setText("Configuración"); break;
                         }
                     }
                 }
